@@ -49,8 +49,11 @@ class StoryViewController: UIViewController, KolodaViewDataSource, KolodaViewDel
     
     // MARK: KolodaViewDataSource
     
+    //var dataSource: [CardType] = [ .welcome, .basic0, .basic1, .basic2, .basic3, .basic4,
+    //                               .progress0, .mapa, .rating, .video]
     var dataSource: [CardType] = [ .welcome, .basic0, .basic1, .basic2, .basic3, .basic4,
                                    .progress0, .rating, .video]
+    
     
     func kolodaNumberOfCards(_ koloda: KolodaView) -> Int {
         return dataSource.count
@@ -119,10 +122,17 @@ class StoryViewController: UIViewController, KolodaViewDataSource, KolodaViewDel
             view.titleLabel.text = "¿Cómo te contacto?"
             view.titleLabel.textColor = backgroundColorTitle
             return view
+        /*
+        case .mapa:
+            let view = HereView()
+            view.backgroundColor = backgroundColorCard
+            //view.imageView.image = UIImage(named: "AppIcon")
+            view.titleLabel.text = "¿Cómo te contacto?"
+            view.titleLabel.textColor = backgroundColorTitle
+            return view
+        */
         case .progress0:
             let view = ProgressCardView()
-            //view.titleLabel.text = "¿Con que tecnologias trabajo?. Presiona el Icono"
-            //view.titleLabel.textColor = UIColor(red:0.89, green:0.02, blue:0.02, alpha:1.0)
             view.topProgressView.value = 0
             view.middleProgressView.value = 0
             view.bottomProgressView.value = 0
@@ -203,6 +213,7 @@ enum CardType {
     case basic3
     case basic4
     case progress0
+    //case mapa
     case rating
     case video
 }
