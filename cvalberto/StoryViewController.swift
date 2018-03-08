@@ -30,7 +30,9 @@ class StoryViewController: UIViewController, KolodaViewDataSource, KolodaViewDel
         super.viewDidLoad()
         title = "CV Alberto Luebbert"
         //navigationController?.navigationBar.barTintColor = UIColor(red:0.20, green:0.40, blue:0.64, alpha:1.0)
-        navigationController?.navigationBar.barTintColor = UIColor(red:0.12, green:0.29, blue:0.56, alpha:1.0)
+        //navigationController?.navigationBar.barTintColor = UIColor(red:0.12, green:0.29, blue:0.56, alpha:1.0)
+        navigationController?.navigationBar.barTintColor = UIColor(red:0.16, green:0.22, blue:0.43, alpha:1.0)
+        
         
         storyView.kolodaView.delegate = self
         storyView.kolodaView.dataSource = self
@@ -150,10 +152,10 @@ class StoryViewController: UIViewController, KolodaViewDataSource, KolodaViewDel
         case .rating:
             let view = RatingCardView()
             view.backgroundColor = backgroundColorCard
-            view.imageView.image = UIImage(named: "portu")
+            view.imageView.image = UIImage(named: "paraiso")
             view.titleLabel.text = "¡Gracias!"
             view.contentLabel.text = "Por utilizar la aplicación!"
-            view.titleLabel.backgroundColor = backgroundColorCard
+            view.titleLabel.backgroundColor = backgroundColorTitle
             view.likeClosureAction = { [weak self] in
                 self?.presentLikeAlert()
             }

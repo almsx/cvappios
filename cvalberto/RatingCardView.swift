@@ -55,7 +55,7 @@ class RatingCardView: UIView {
     let titleLabel: UILabel = {
         let label = UILabel(frame: .zero)
         label.font = UIFont.systemFont(ofSize: 30)
-        label.textColor = UIColor(red:0.86, green:0.38, blue:0.53, alpha:1.0)
+        //label.textColor = UIColor(red:0.86, green:0.38, blue:0.53, alpha:1.0)
         label.numberOfLines = 0
         label.textAlignment = .center
         return label
