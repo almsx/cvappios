@@ -1,0 +1,27 @@
+PODS:
+  - Koloda (4.3.1):
+    - pop (~> 1.0)
+  - MBCircularProgressBar (0.3.5)
+  - pop (1.0.10)
+  - SnapKit (4.0.0)
+  - SwiftLint (0.24.0)
+  - youtube-ios-player-helper (0.1.6)
+
+DEPENDENCIES:
+  - Koloda (~> 4.3.1)
+  - MBCircularProgressBar
+  - SnapKit
+  - SwiftLint
+  - youtube-ios-player-helper (~> 0.1.4)
+
+SPEC CHECKSUMS:
+  Koloda: 0d39b2aa188ccd1fac48d752acaf9802e683c625
+  MBCircularProgressBar: 0b795b722a5eb5b0923822f90474e2576a1a7855
+  pop: 82ca6b068ce9278fd350fd9dd09482a0ce9492e6
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  SwiftLint: a014c92b4664e8b13f380f8640a51bb1733778ba
+  youtube-ios-player-helper: 21ab92db027c7ff86cb17a3843a3f6eafc8158d2
+
+PODFILE CHECKSUM: 7bdf7046ae05df305ac6eb5b53692d6d8659310f
+
+COCOAPODS: 1.3.1
